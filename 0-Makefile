@@ -2,7 +2,7 @@
 CC	= 	gcc
 SRC	= 	main.c set.c
 OBJ	= 	$(SRC:.c=.o)
-NAME=	0_set
+NAME=   0_set
 RM	=	rm
 
 all: $(OBJ)
