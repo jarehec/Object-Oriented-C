@@ -1,0 +1,17 @@
+# Makefile that builds holberton executable
+CC	= 	gcc
+SRC	= 	main.c
+OBJ	= 	$(SRC:.c=.o)
+NAME=	0_set
+RM	=	rm
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) -f *~ $(NAME)
+oclean:
+	$(RM) -f *.o
+fclean:
+	$(RM) -f *.o *~ $(NAME)
+re: oclean *.o all
+
